@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* 유틸리티 */
+/* 스크린리더 전용 */
+.behind-data {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+/* 메인 스타일 */
+/* nav 스타일 */
+/* 컨텐츠 스타일 */
+/* footer 디자인 */
+.naver-company {
+    background: #BDBDBD;
+    margin-top: 135px;
+    height: 300px;
+}
+.naver-company .naver-coInfo {
+    position: relative;
+    overflow: hidden;
+    width: 1189px;
+    margin: 0 auto;
+    top: 20%;
+    left: 5%;
+}
+.naver-company .naver-lawInfo dt, .naver-company .naver-lawInfo dd{
+    color: white;
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+.naver-company .naver-lawInfo dt {
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.naver-company .naver-lawInfo dd::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    margin: 0 7px;
+    background: #000;
+}
+.naver-company .naver-lawInfo dd:last-child::after {
+    display: none;
+}
+.naver-info {
+    width: 800px;
+    background-color: white;
+}
+
+.naver-company .naver-info dt, .naver-company .naver-info dd {
+    color: #ece9e9e1;
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 100px;
+}
+.naver-company .naver-info dt {
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.naver-company .naver-info dd::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    margin: 0 7px;
+    background: #000;
+}
+.naver-company .naver-info .naver-info-item {
+    position: relative;
+    left: 158px;
+}
+.naver-company .text-copy {
+    color: white;
+    float: left;
+    position: relative;
+    left: 350px;
+}
+.naver-law-text {
+    color: #ece9e9e1;
+    font-size: 13px;
+    position: relative;
+    left: 120px;
+}
