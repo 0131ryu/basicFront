@@ -1,7 +1,7 @@
 import React from "react";
 import Ingredient from "./Ingredient";
 
-export default function IngredientsList({ list = [] }) {
+export default function IngredientsList({ list }) {
   return (
     <ul className="ingredients">
       {list.map((ingredient, i) => (
