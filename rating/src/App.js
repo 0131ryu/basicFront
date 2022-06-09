@@ -3,7 +3,10 @@ import StarRating from "./StarRating";
 function App() {
   return (
     <div>
-      <StarRating />
+      <StarRating
+        style={{ backgroundColor: "lightblue" }}
+        onDoubleClick={(e) => alert("double click")}
+      />
     </div>
   );
 }

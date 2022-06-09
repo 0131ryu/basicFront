@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
+import Star from "./Star";
+import { createArray } from "./lib";
 
-const Star = ({ selected = false, onSelect = (f) => f }) => (
-  <FaStar color={selected ? "red" : "grey"} onClick={onSelect} />
-);
-
-const createArray = (length) => [...Array(length)];
-
-export default function StarRating({ totalStars = 5 }) {
+export default function StarRating({ style = {}, totalStars = 5, ...props }) {
   const [SelectedStars, setSelectedStars] = useState(0);
 
   return (
-    <>
+    <div style={{ padding: "5ps", ...style }} {...props}>
       {createArray(totalStars).map((n, i) => (
         <Star
           key={i}
@@ -22,6 +17,6 @@ export default function StarRating({ totalStars = 5 }) {
       <p>
         {SelectedStars} of {totalStars} stars
       </p>
-    </>
+    </div>
   );
 }
