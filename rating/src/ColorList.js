@@ -1,21 +1,15 @@
 import React from "react";
+// import { ColorContext } from ".";
 import Color from "./Color";
+import { useColors } from "./ColorProvider";
 
-function ColorList({
-  colors = [],
-  onRemoveColor = (f) => f,
-  onRateColor = (f) => f,
-}) {
+function ColorList() {
+  const { colors } = useColors();
   if (!colors.length) return <div>No Color Lists</div>;
   return (
-    <div>
+    <div className="color-list">
       {colors.map((color) => (
-        <Color
-          key={color.id}
-          {...color}
-          onRemove={onRemoveColor}
-          onRate={onRateColor}
-        />
+        <Color key={color.id} {...color} />
       ))}
     </div>
   );
