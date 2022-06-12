@@ -3,6 +3,7 @@ import Wrapper from "./Wrapper";
 import "./App.css";
 import Counter from "./Counter";
 import InputSample from "./InputSample";
+import UserList from "./UserList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </Wrapper>
       <Counter />
       <InputSample />
+      <UserList />
     </div>
   );
 }
