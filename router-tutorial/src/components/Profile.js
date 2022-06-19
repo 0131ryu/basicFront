@@ -17,6 +17,7 @@ const profileData = {
 const Profile = ({ match }) => {
   //파라미터를 받아올 땐 match안에 들어있는 params값을 참조함
   const { username } = useParams();
+  console.log(username);
   const profile = profileData[username];
   if (!profile) {
     return <div>존재하지 않는 유저입니다.</div>;
